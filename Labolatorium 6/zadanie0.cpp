@@ -57,18 +57,18 @@ istream & operator >> (istream &in_stream, Complex &complex){
 
 int main() {
     Complex number1(4,7), number2(1,3);
-    Complex sum, sub, multi, div;
+    Complex sum, sub, multi, divi;
     Complex my_complex_number;
 
     sum = number1 + number2;
     sub = number1 - number2;
     multi = number1 * number2;
-    div = number1 / number2;
+    divi = number1 / number2;
 
     std::cout << "Suma liczb zespolona " << number1 << " oraz " << number2 << " wynosi: " << sum << std::endl;
     std::cout << "Roznica liczb zespolona " << number1 << " oraz " << number2 << " wynosi: " << sub << std::endl;
     std::cout << "Iloczyn liczb zespolona " << number1 << " oraz " << number2 << " wynosi: " << multi << std::endl;
-    std::cout << "Iloraz liczb zespolona " << number1 << " oraz " << number2 << " wynosi: " << div << std::endl;
+    std::cout << "Iloraz liczb zespolona " << number1 << " oraz " << number2 << " wynosi: " << divi << std::endl;
 
     std::cout << "Podaj czesc rzeczywista i urojona liczby zespolonej: ";
     std::cin >> my_complex_number;
